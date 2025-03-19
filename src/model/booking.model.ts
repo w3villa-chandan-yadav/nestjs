@@ -27,5 +27,5 @@ export class Booking extends Model<Booking> {
   //   type:DataType.TEXT,
   //   allowNull : true,
   // })
-  // bookingInfo : Text;
+  bookingInfo : Text;
 }

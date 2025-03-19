@@ -8,4 +8,5 @@ import { MysqlServiceUser } from './mysql.serviceUser';
   // providers: [MysqlService,MysqlServiceUser],  
   // exports: [MysqlService,MysqlServiceUser],    
 })
+//comment
 export class MysqlModule {}

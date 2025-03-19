@@ -22,4 +22,10 @@ export class Booking extends Model<Booking> {
     allowNull: false,
   })
   bookingDate: Date;
+
+  @Column({
+    type:DataType.TEXT,
+    allowNull : true,
+  })
+  bookingInfo : Text;
 }

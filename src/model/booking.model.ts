@@ -29,6 +29,7 @@ export class Booking extends Model<Booking> {
   // })
   // bookingInfo : Text;
 
+  //lorem8
   
     // @Column({
   //   type:DataType.TEXT,

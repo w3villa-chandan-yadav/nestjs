@@ -28,4 +28,11 @@ export class Booking extends Model<Booking> {
   //   allowNull : true,
   // })
   // bookingInfo : Text;
+
+  
+    // @Column({
+  //   type:DataType.TEXT,
+  //   allowNull : true,
+  // })
+  // bookingDescription : Text;
 }

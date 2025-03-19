@@ -8,6 +8,7 @@ module.exports = {
      *
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
+
     //  */ 
     // await queryInterface.createTable('userss', {
     //   id: {
@@ -41,6 +42,34 @@ module.exports = {
     //     defaultValue:"chandan"
     //   }
     // });
+
+   
+      email: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      password: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now'),
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now'),
+      },
+      nameIS:{
+        allowNull:false,
+        type:Sequelize.STRING,
+        defaultValue:"chandan"
+      }
+    });
+
   },
 
   async down (queryInterface, Sequelize) {

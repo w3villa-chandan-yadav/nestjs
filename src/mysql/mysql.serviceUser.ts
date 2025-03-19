@@ -10,8 +10,8 @@ export class MysqlServiceUser implements OnModuleInit, OnModuleDestroy {
   }
 
   private async switchToManagementDatabase() {
-    const pool = this.mysqlService.getPool();
-    const connection = await pool.getConnection();
+    const connection = this.mysqlService.getPool();
+    // const connection = await pool.getConnection();
 
     try {
       await connection.query('USE management');
@@ -37,7 +37,7 @@ export class MysqlServiceUser implements OnModuleInit, OnModuleDestroy {
     } catch (error) {
       console.error('Error checking/creating user table:', error);
     } finally {
-      connection.release();
+      // connection.release();
     }
   }
 

@@ -3,9 +3,9 @@ import { MysqlService } from './mysql.service';  // Import the MysqlService
 import { MysqlServiceUser } from './mysql.serviceUser';
 
 
-@Global()
+// @Global()
 @Module({
-  providers: [MysqlService,MysqlServiceUser],  
-  exports: [MysqlService,MysqlServiceUser],    
+  // providers: [MysqlService,MysqlServiceUser],  
+  // exports: [MysqlService,MysqlServiceUser],    
 })
 export class MysqlModule {}

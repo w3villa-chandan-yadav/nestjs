@@ -28,4 +28,7 @@ export class Booking extends Model<Booking> {
   //   allowNull : true,
   // })
   // bookingInfo : Text;
+
+  //lorem8
+
 }

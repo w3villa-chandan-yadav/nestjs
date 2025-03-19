@@ -23,9 +23,9 @@ export class Booking extends Model<Booking> {
   })
   bookingDate: Date;
 
-  @Column({
-    type:DataType.TEXT,
-    allowNull : true,
-  })
-  bookingInfo : Text;
+  // @Column({
+  //   type:DataType.TEXT,
+  //   allowNull : true,
+  // })
+  // bookingInfo : Text;
 }
